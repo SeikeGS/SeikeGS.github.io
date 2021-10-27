@@ -1,78 +1,225 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  
-  <title>Python作业 | Nothing NEW</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  
-  
-  
-<link rel="stylesheet" href="/css/style.css">
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
 
-  
-    
-<link rel="stylesheet" href="/css/highlight.css">
 
-  
-  <meta name="description" content="第二次作业 x题目请统计给定字符串中出现单词的词频（不能调包，请自行编制程序实现）。如：  ‘It was a cold winter evening, an old farmer finished his work and went home from the fields.\nOn his way he saw something on the ground. He looked at it">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Mist","darkmode":false,"version":"8.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+<meta name="description" content="第二次作业 x题目请统计给定字符串中出现单词的词频（不能调包，请自行编制程序实现）。如：">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python作业">
 <meta property="og:url" content="http://example.com/2021/10/27/Python%E4%BD%9C%E4%B8%9A/index.html">
 <meta property="og:site_name" content="Nothing NEW">
-<meta property="og:description" content="第二次作业 x题目请统计给定字符串中出现单词的词频（不能调包，请自行编制程序实现）。如：  ‘It was a cold winter evening, an old farmer finished his work and went home from the fields.\nOn his way he saw something on the ground. He looked at it">
+<meta property="og:description" content="第二次作业 x题目请统计给定字符串中出现单词的词频（不能调包，请自行编制程序实现）。如：">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-10-27T04:48:22.000Z">
-<meta property="article:modified_time" content="2021-10-27T04:50:06.170Z">
-<meta property="article:author" content="John Doe">
+<meta property="article:modified_time" content="2021-10-27T12:03:31.178Z">
+<meta property="article:author" content="Someone">
 <meta property="article:tag" content="Python">
-<meta name="twitter:card" content="summary"><meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="twitter:card" content="summary">
 
-<body>
-  <div id="wrapper">
-    <header id="header">
-  <h1 id="title">
-    <a href="/">Nothing NEW</a>
-  </h1>
-  <nav>
-    
-    
-      
-      <a class="nav-link" href="/">Home</a>
-    
-      
-        <span class="nav-spacer">×</span>
-      
-      <a class="nav-link" href="/archives">Archives</a>
-    
-    
-  </nav>
-</header>
 
-    <div id="content">
-      <article id="post-Python作业" class="article article-type-post" itemprop="blogPost" itemscope>
-  <div class="article-inner">
-    
-      <header class="article-header">
+<link rel="canonical" href="http://example.com/2021/10/27/Python%E4%BD%9C%E4%B8%9A/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2021/10/27/Python%E4%BD%9C%E4%B8%9A/","path":"2021/10/27/Python作业/","title":"Python作业"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Python作业 | Nothing NEW</title>
+  
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">Nothing NEW</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li>
+        <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a></li>
+        <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li>
+        <li class="menu-item menu-item-schedule"><a href="/schedule/" rel="section"><i class="fa fa-calendar fa-fw"></i>Schedule</a></li>
+  </ul>
+</nav>
+
+
+
+
+</div>
         
   
-    <h2 class="article-title" itemprop="headline name">
-      Python作业
-    </h2>
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E6%AC%A1%E4%BD%9C%E4%B8%9A-x"><span class="nav-number">1.</span> <span class="nav-text">第二次作业 x</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A2%98%E7%9B%AE"><span class="nav-number">1.1.</span> <span class="nav-text">题目</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81"><span class="nav-number">1.2.</span> <span class="nav-text">代码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BF%90%E8%A1%8C%E7%BB%93%E6%9E%9C"><span class="nav-number">1.3.</span> <span class="nav-text">运行结果</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B3%A8%E9%87%8A"><span class="nav-number">1.4.</span> <span class="nav-text">注释</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%B8%89%E6%AC%A1%E4%BD%9C%E4%B8%9A-x"><span class="nav-number">2.</span> <span class="nav-text">第三次作业 x</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E9%A2%98-%E7%94%B0%E5%BF%8C%E8%B5%9B%E9%A9%AC"><span class="nav-number">2.1.</span> <span class="nav-text">第一题 田忌赛马</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A2%98%E7%9B%AE-1"><span class="nav-number">2.1.1.</span> <span class="nav-text">题目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9E%E7%8E%B0%E6%80%9D%E8%B7%AF1-%E5%A4%B1%E8%B4%A5"><span class="nav-number">2.1.2.</span> <span class="nav-text">实现思路1 - 失败</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9E%E7%8E%B0%E6%80%9D%E8%B7%AF2-%E5%A4%B1%E8%B4%A5"><span class="nav-number">2.1.3.</span> <span class="nav-text">实现思路2 - 失败</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9E%E7%8E%B0%E6%80%9D%E8%B7%AF3-%E6%88%90%E5%8A%9F"><span class="nav-number">2.1.4.</span> <span class="nav-text">实现思路3 - 成功</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%8D%E6%80%9D"><span class="nav-number">2.1.5.</span> <span class="nav-text">反思</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E9%A2%98-%E6%95%B0%E5%AD%97%E8%AF%86%E5%88%AB"><span class="nav-number">2.2.</span> <span class="nav-text">第二题 数字识别</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A2%98%E7%9B%AE-2"><span class="nav-number">2.2.1.</span> <span class="nav-text">题目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9E%E7%8E%B0%E6%80%9D%E8%B7%AF"><span class="nav-number">2.2.2.</span> <span class="nav-text">实现思路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8B%93%E5%B1%95"><span class="nav-number">2.2.3.</span> <span class="nav-text">拓展</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%8D%E6%80%9D-1"><span class="nav-number">2.2.4.</span> <span class="nav-text">反思</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#x-%E7%AC%AC%E5%9B%9B%E6%AC%A1%E4%BD%9C%E4%B8%9A"><span class="nav-number">3.</span> <span class="nav-text">x 第四次作业</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A2%98%E7%9B%AE-3"><span class="nav-number">3.1.</span> <span class="nav-text">题目</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%9E%E7%8E%B0%E6%80%9D%E8%B7%AF1-%E6%97%A0%E6%8B%AC%E5%8F%B7%E7%89%88%E6%9C%AC"><span class="nav-number">3.2.</span> <span class="nav-text">实现思路1 - 无括号版本</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%9E%E7%8E%B0%E6%80%9D%E8%B7%AF2-%E6%9C%89%E6%8B%AC%E5%8F%B7%E7%89%88%E6%9C%AC"><span class="nav-number">3.3.</span> <span class="nav-text">实现思路2 - 有括号版本</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%8D%E6%80%9D%E4%B8%8E%E6%94%B9%E8%BF%9B"><span class="nav-number">3.4.</span> <span class="nav-text">反思与改进</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Someone</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
   
 
 
-        <div class="article-meta">
-          <time class="article-date" datetime="2021-10-27T04:48:22.000Z" itemprop="datePublished">2021-10-27</time>
+<div class="post-block">
+  
+  
 
-          
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/10/27/Python%E4%BD%9C%E4%B8%9A/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Someone">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Nothing NEW">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Python作业
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2021-10-27 12:48:22 / Modified: 20:03:31" itemprop="dateCreated datePublished" datetime="2021-10-27T12:48:22+08:00">2021-10-27</time>
+    </span>
+
+  
+</div>
+
         </div>
       </header>
+
     
-    <div class="article-entry" itemprop="articleBody">
-      
-      
+    
+    
+    <div class="post-body" itemprop="articleBody">
         <h1 id="第二次作业-x"><a href="#第二次作业-x" class="headerlink" title="第二次作业 x"></a>第二次作业 x</h1><h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>请统计给定字符串中出现单词的词频（不能调包，请自行编制程序实现）。如：</p>
+<span id="more"></span>
+
 <blockquote>
 <p>‘It was a cold winter evening, an old farmer finished his work and went home from the fields.\nOn his way he saw something on the ground. He looked at it and found it was a snake.\n”Poor thing! “ the man said, “I must try to save your life.”\n”He picked it up and looked for a warm place to put it in.\nBut how could he find one in such cold weather? So he decided to put the snake inside his clothes.\nA few minutes later, the snake came back to life and began to move.\nSuddenly it gave the man a deadly bite.’</p>
 </blockquote>
@@ -296,59 +443,70 @@ your : 1
 <li>本计算器的优势在于能随机生成相对复杂的表达式，并且设置了智能与人性化的文字提示（例如，超过60分显示congratulations，低于60分显示sorry）。</li>
 </ul>
 
-      
     </div>
-    
-    
-    <div class="article-category">
-      
-      
-      
-        <b>Tags:</b>
-        <a class="article-tag-none-link" href="/tags/Python/" rel="tag">Python</a>
-      
-    </div>
-    
-    
-  </div>
-</article>
 
-  
-<nav id="article-nav" class="article-nav">
-  
-    <span id="article-nav-newer" class="article-nav-link-wrap newer"></span>
-  
-  
-    <a href="/2021/10/27/%E4%BA%BA%E7%B1%BB%E8%A7%82%E5%AF%9F%E6%97%A5%E5%BF%97/" id="article-nav-older" class="article-nav-link-wrap older">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Python/" rel="tag"># Python</a>
+          </div>
+
         
-          人类观察日志
-        
-      </div>
-    </a>
-  
-</nav>
 
-
-
-
-
-
-    </div>
-  </div>
-  
-
-
-
-
-<div id="settings-container">
-  <div id="dark-mode">dark</div>
-  <div id="sans-font">sans</div>
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2021/10/27/%E4%BA%BA%E7%B1%BB%E8%A7%82%E5%AF%9F%E6%97%A5%E5%BF%97/" rel="prev" title="人类观察日志">
+                  <i class="fa fa-chevron-left"></i> 人类观察日志
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
 </div>
-<script type="text/javascript">
-let d=document,r=d.documentElement.style,f=r.setProperty.bind(r),l=localStorage,s=l.getItem('s')||(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches),n=l.getItem('n'),m=d.getElementById("dark-mode"),b=()=>{f('--bg-color','#fafafa');f('--code-bg-color','#f4f4f4');f('--text-color','#212121');f('--secondary-color','#808080');f('--tertiary-color','#b0b0b0');f('--link-color','#b5c8cf');f('--link-hover-color','#618794');f('--link-bg-color','#dae4e7');f('--selection-color','#dae4e7');m.innerHTML="dark"},c=()=>{f('--bg-color','#212121');f('--code-bg-color','#292929');f('--text-color','#fff');f('--secondary-color','#c0c0c0');f('--tertiary-color','#6e6e6e');f('--link-color','#4d6b75');f('--link-hover-color','#96b1bb');f('--link-bg-color','#5d828e');f('--selection-color','#acc1c9');m.innerHTML="light"},o=d.getElementById("sans-font"),e=()=>{f('--body-stack','"Lora", "Georgia", "Times New Roman", serif');o.innerHTML="sans"},g=()=>{f('--body-stack','"Lato", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "Verdana", sans-serif');o.innerHTML="serif"};m.onclick=()=>{if(s==2){s=1;l.setItem('s',s);c()}else{s=2;l.setItem('s',s);b()}};o.onclick=()=>{if(n==2){n=1;l.setItem('n',n);g()}else{n=2;l.setItem('n',n);e()}};if(!s){s=2;l.setItem('s',2)};if(s==1){c()};if(!n){n=2;l.setItem('n',2)};if(n==1){g()};
-</script>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Someone</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/mist/" rel="noopener" target="_blank">NexT.Mist</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+  
+
 
 
 
